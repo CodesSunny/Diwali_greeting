@@ -7,7 +7,7 @@
 }
 
 .welcome-section{
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-color: #F99501;
   background-image: url(/images/orange-backdrop.png);
   background-size: cover;
@@ -19,8 +19,7 @@
 
 .jhalar{
   display: flex;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-between;
 }
 
 .jhalar img{
@@ -32,8 +31,8 @@
 .welcome-quote{
     font-size: 2.5rem;
     width: 400px;
-    margin-top: 150px;
-    margin-left: -650px;
+    margin-top: 100px;
+    margin-left: -400px;
 }
 
 #receiver{
@@ -49,8 +48,9 @@
     gap: 20px;
     border-radius: 40px;
     background-color: #F3CC79;
-    transform: translateX(-350px);
-    font-size: 25px;
+    transform: translateX(-200px);
+    font-size: 20px;
+    max-width: 400px;
 }
 
 .audio::-webkit-media-controls-panel{
@@ -117,7 +117,7 @@
 
 .chakra{
     position: absolute;
-    top: 1220px;
+    top: 1350px;
     z-index: 10;
     opacity: 0.9;
     width: 40%;
@@ -129,7 +129,7 @@
 }
 
 .quotation{
-    width: 800px;
+    max-width: 800px;
     background: #fff;
     border-radius: 20px;
     padding:100px 60px;
@@ -140,7 +140,7 @@
     font-size: 2.5rem;
     font-weight: 800;
     text-wrap: wrap;
-    width: 600px ;
+    max-width: 600px ;
     text-align: justify;
 }
 .quotation img{
@@ -172,4 +172,126 @@
 #sender{
     color: #BB2CD9;
     font-size: 1.3rem;
+}
+
+
+
+/* ..............mobile responsive ..........*/
+
+@media (max-width: 492px){
+    body{
+        overflow-x: hidden;
+    }
+    .welcome-section{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    .jhalar{
+        display: flex;
+        flex-direction: column;
+    }
+    .jhalar img {
+        width: 100%;
+        height: 70%;
+    }
+    .welcome-quote{
+        font-size: 1.5rem;
+        width: 80%;
+        margin: 400px auto auto 0;
+        text-align: center;
+    }
+    .audio-container{
+        padding: 10px;
+        border-radius: 40px;
+        font-size: 10px;
+        max-width: 400px;
+        gap: 10px;
+    }
+    .audio-container p{
+        font-size: small;
+    }
+    #receiver {
+        font-size: 2rem;
+        margin-left: 5px;
+    }
+    .audio-container {
+        font-size: 1.2rem;
+        padding: 10px;
+        transform: translateX(0);
+    }
+       .deepak {
+        margin-left: 100%;
+        margin-bottom: 0;
+    }
+    .media-links{
+        font-size: 1.8rem;
+        margin-top: 0;
+    }
+    .divider{
+        padding: 20px 0;
+        gap: 20px  ;
+    }
+    .laxmi-ganesh-section{
+        gap: 15px;
+    }
+    .laxmi-ganesh{
+        height: 300px;
+        width: 100%;
+    }
+    .chakra{
+        top: 1270px;
+        width: 50%;
+    }
+    .bless-quote{
+        font-size: 2.5rem;
+        text-align: center;
+
+    }
+    .quotation{
+        width: 100%;
+        padding:20px;
+    }
+    .quotation p{
+        font-size: 1.2rem;
+        max-width: 70% ;
+        font-weight: 600;
+    }
+    .quotation img{
+        object-fit: contain;
+        height: 90%;
+        top: 10px;
+        right: -10px;
+    }
+    .gods-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        width: 100%;
+    }
+     .gods-images{
+        display: flex;
+        justify-content: center;
+    }
+
+    .gods-container img{
+        width: 50%;
+    }
+    .thank-you{
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+    .credit-text{
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+    
+    #sender{
+        color: #BB2CD9;
+        font-size: 1rem;
+        margin-right: 10px;
+    }
 }
