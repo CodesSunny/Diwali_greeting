@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:cursive;
+    text-decoration: none;
+}
+
+.welcome-section{
+  min-height: 100vh;
+  background-color: #F99501;
+  background-image: url(/images/orange-backdrop.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.jhalar{
+  display: flex;
+  justify-content: center;
+}
+
+.jhalar img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.welcome-quote{
+    font-size: 2.5rem;
+    width: 400px;
+    margin-top: 150px;
+    margin-left: -650px;
+}
+
+#receiver{
+    font-size: 3rem;
+    color: purple;
+    margin-left: 10px;
+}
+
+.audio-container{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 40px;
+    background-color: #F3CC79;
+    transform: translateX(-350px);
+    font-size: 25px;
+}
+
+.audio::-webkit-media-controls-panel{
+    background-color: #F3CC79;
+    font-size: 25px;
+}
+
+.deepak{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  transform: translateX(-450px);
+}
+
+.media-links{
+    display: flex;
+    gap: 20px;
+    font-size: 2rem;
+    color: white;
+    padding: 5px;
+}
+
+/*............... laxmi-ganesh-section........... */
+
+.laxmi-ganesh-section{
+    /* min-height: 100vh; */
+    background:  #f99501;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px ;
+}
+
+ .divider{
+    padding: 50px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px  ;
+}
+
+.divider .line{
+    width: 450px;
+    border: 2px solid;
+    border-radius: 4px;
+}
+
+ .circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid;
+    background: #fff;
+}
+
+.laxmi-ganesh{
+    position: relative;
+    z-index: 11;
+    opacity: 0.8;
+    
+}
+
+.chakra{
+    position: absolute;
+    top: 1220px;
+    z-index: 10;
+    opacity: 0.9;
+    width: 40%;
+}
+
+.bless-quote{
+    font-size: 3.5rem;
+    text-shadow: 5px 5px 10px rgba(150,0,150,0.5);
+}
+
+.quotation{
+    width: 800px;
+    background: #fff;
+    border-radius: 20px;
+    padding:100px 60px;
+    position: relative;
+}
+
+.quotation p{
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-wrap: wrap;
+    width: 600px ;
+    text-align: justify;
+}
+.quotation img{
+    object-fit: contain;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -130px;
+}
+
+.happy-diwali{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.thank-you{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.credit-text{
+    text-align: end;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#sender{
+    color: #BB2CD9;
+    font-size: 1.3rem;
+}
