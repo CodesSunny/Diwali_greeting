@@ -202,7 +202,7 @@
 
 /* /* ..............mobile responsive .......... */
 /* first breakpoint */
-@media (min-width: 840px) and (max-width: 1430px){
+@media (min-width: 841px) and (max-width: 1430px){
     .welcome-quote{
         margin-left: 150px;
     }  
@@ -210,41 +210,7 @@
 
 /* second breakpoint */
 
- @media (max-width: 840px){
-    body{
-        overflow-x: hidden;
-    }
-    .jhalar{
-        display: flex;
-        justify-content: space-between;
-      }
-      
-      .jhalar img{
-          position: absolute;
-          max-width: 100%;
-          top: 0;
-          left: 0;
-      }
-      
-      .welcome-quote{
-          font-size: 2.5rem;
-          width: 400px;
-          margin-top: 100px;
-          margin-left: 250px;
-      }  
-      .audio-container{
-        transform: unset;
-      }
-      .button{
-        margin-left: unset;
-      }
-      .bless-quote{
-        text-align: center;
-      }
-} 
-
-/* third breakpoint */
-@media (min-width: 493px) and (max-width: 839px){
+@media (min-width: 493px) and (max-width: 840px){
     .welcome-section{
         display: flex;
         flex-direction: column;
@@ -279,6 +245,15 @@
     }
     .button{
         display: none;
+    }
+    .audio-container{
+        padding: 10px;
+        border-radius: 40px;
+        font-size: 1.2rem;
+        max-width: 400px;
+        gap: 10px;
+        padding: 10px;
+        transform: translateX(0);
     }
 
 }
@@ -318,6 +293,8 @@
         font-size: 10px;
         max-width: 400px;
         gap: 10px;
+        padding: 10px;
+        transform: translateX(0);
     }
     .audio-container p{
         font-size: small;
@@ -325,11 +302,6 @@
     #receiver {
         font-size: 2rem;
         margin-left: 5px;
-    }
-    .audio-container {
-        font-size: 1.2rem;
-        padding: 10px;
-        transform: translateX(0);
     }
     .deepak {
         transform: none;
