@@ -6,7 +6,11 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css">
     <title>Happy Diwali</title>
-    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+    <script src="gsap.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <section class="welcome-section">
@@ -20,9 +24,10 @@
                 <audio class="audio" src="/images/sitar-and-tanpura.mp3" autoplay controls></audio>
             </div>
             <div class="deepak">
-                <img class="first-deepak" src="/images/deepak.png" alt="deepak"/>
-                <img class="second-deepak" src="/images/deepak.png" alt="deepak"/>
+                <img class="first-deepak square" src="/images/deepak.png" alt="deepak"/>
+                <img class="second-deepak square" src="/images/deepak.png" alt="deepak"/>
             </div>
+            <button class="button">Click to Swap</button>
             <div class="media-links">
                 <a href="https://wa.me/?text=https://yourapp.com/?receiver=John" target="_blank"><i class="ri-whatsapp-line"></i></a>
                 <a href="https://www.facebook.com/sharer/sharer.php?u=https://yourapp.com/?receiver=John" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
